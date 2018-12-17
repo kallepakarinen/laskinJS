@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript-laskin</title>
+</head>
+
+<body>
+    <form name="calculator">
+        Luku1: <input type="text" name="numero1"><br>
+        Luku2: <input type="text" name="numero2"><br>
+        Lukujen summa: <input type="text" name="tulos"><br>
+        <!-- button onclick="laske()">laske</button> -->
+        <input type="button" value="+" onclick="laske(this.value)">
+        <input type="button" value="-" onclick="laske(this.value)">
+        <input type="button" value="*" onclick="laske(this.value)">
+        <input type="button" value="/" onclick="laske(this.value)">
+
+    </form>
+
+    <script src="mikonlaskimenjs.js"></script>
+</body>
+</html>
