@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--  <script type="text/javascript" src= "muuttujat.js";></script>-->
+  <script type="text/javascript" src="laskin.js" ></script>
+  <script type="text/javascript" src="jsObject.js" ></script>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<title>Laskin</title>
+
+<body>
+  <div class="main">
+  <h1>Laskin</h1>
+  <form name="calculator">
+    Lasku: <input type="text" name="lasku">
+      </br>
+    Tulos: <input type="text" name="tulos" style="margin-bottom: 15px; margin-left:4px;">
+  </br>
+
+    <input type="button" id="7" value="7" onClick="btnNumber(this.id)">
+    <input type="button" id="8" value="8" onClick="btnNumber(this.id)">
+    <input type="button" id="9" value="9" onClick="btnNumber(this.id)">
+    <input type="button" class="operator" id="/" value="/" onClick="btnNumber(this.id)">
+    <input type="button"  id="*" value="*" onClick="btnNumber(this.id)">
+    </br>
+
+    <input type="button" id="4" value="4" onClick="btnNumber(this.id)">
+    <input type="button" id="5" value="5" onClick="btnNumber(this.id)">
+    <input type="button" id="6" value="6" onClick="btnNumber(this.id)">
+    <input type="button" class="operator" id="+" value="+" onClick="btnNumber(this.id)">
+    <input type="button" id="-" value="-" onClick="btnNumber(this.id)">
+
+    </br>
+    <input type="button" id="1" value="1" onClick="btnNumber(this.id)">
+    <input type="button" id="2" value="2" onClick="btnNumber(this.id)">
+    <input type="button" id="3" value="3" onClick="btnNumber(this.id)">
+    <input type="button" class="operator" value="=" onClick="summa()">
+    </br>
+
+    <input type="button" value="CLR" onClick="btnClear()">
+    <input type="button" id="0" value="0" onClick="btnNumber(this.id)">
+
+  </form>
+</div>
+</body>
+
+</html>
