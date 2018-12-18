@@ -1,18 +1,18 @@
-var lasku;
+var calculateValue;
 
 function summa() {
-  var summa;
-  lasku = document.calculator.lasku.value;
-  summa = eval(lasku);
-    document.calculator.tulos.value = summa;
-    document.calculator.lasku.value = summa;
+  var total;
+  calculateValue = document.calculator.lasku.value;
+  total = eval(calculateValue);
+  document.calculator.tulos.value = total;
+  document.calculator.lasku.value = total;
 }
 
 function btnNumber(clicked_id) {
   document.calculator.lasku.value = document.calculator.lasku.value + clicked_id;
 }
 
-function btnClear(){
+function btnClear() {
   document.calculator.tulos.value = "";
   document.calculator.lasku.value = "";
 }
